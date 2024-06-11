@@ -1,0 +1,34 @@
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+    height: auto; /* Allow the container to adjust its height based on content */
+    margin-top: 5vh; /* Adjust as needed to position the buttons */
+  }
+  
+  .button {
+    width: 240px;
+    height: 105px;
+    background-color: #5B0000;
+    color: white;
+    font-size: 32px;
+    font-weight: 600; /* Semi-bold */
+    text-align: center;
+    border: none;
+    margin-right: 20px; /* Spacing between buttons */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    z-index: 1; /* Ensure the text section is above the rectangle */
+  }
+
+  .button:hover {
+    background-color: #850000; /* Change background color on hover */
+  }
+
+  .button:active {
+    background-color: #C70101; /* Change background color when clicking */
+    transition: none; /* Remove transition effect when clicking */
+  }
+  
+  .spacer {
+    width: 20px; /* Adjust spacing between buttons */
+  }
