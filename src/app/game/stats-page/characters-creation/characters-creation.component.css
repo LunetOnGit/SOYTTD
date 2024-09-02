@@ -1,0 +1,126 @@
+.title, .subtitle, .description {
+  color: white;
+  position: relative;
+  z-index: 1;
+  width: 800px; /* Limit width to 800px */
+  margin: 0 auto; /* Center the component horizontally */
+  font-family: Arial, sans-serif;
+  
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 38px;
+}
+
+.description {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.presets-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  margin: 10px auto; /* Updated to add bottom margin and center horizontally */
+}
+
+.save-button, .load-button, .reset-all, .secondPreset, .firstPreset {
+  height: 40px;
+  width: 90px;
+  margin-left:20px;
+  z-index: 1; 
+}
+
+.add-char{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  margin: 40px auto; /* Updated to add bottom margin and center horizontally */
+}
+
+.character-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  z-index: 3;
+  width: 800px; /* Limit width to 800px */
+  margin: 50px auto;
+}
+
+.image-container {
+  width: 100px;  /* Maximum image width */
+  height: 100px; /* Maximum image height */
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  margin-right: 20px; /* Space between the image and the stats */
+  z-index: 1;
+}
+
+.nameAndButtons{
+  z-index: 1;
+}
+
+.character-image {
+  max-height: 100%;  /* Image can grow up to container height */
+  max-width: 100%;   /* Image can grow up to container width */
+  height: auto;      /* Maintain aspect ratio */
+  width: auto;       /* Maintain aspect ratio */
+}
+
+.name-input {
+  margin-left: 5px;
+  margin-right: 5px;
+  z-index: 1;
+}
+
+.stats div {
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  width: 100%;
+}
+
+.stat {
+  display: flex;
+  align-items: center; /* Center align the content of .stat divs */
+  justify-content: flex-start; /* Align content to the left */
+  margin-bottom: 10px; /* Add space between stat rows */
+}
+
+.stat label {
+  display: inline-block;
+  width: 100px; /* Set a fixed width for all labels */
+  margin-right: 0px; /* Right margin for spacing between label and input */
+}
+
+.stat input[type="number"] {
+  width: 50px; /* Fixed width for inputs */
+}
+
+.stat-line {
+  height: 10px;
+  margin-left: 5px; /* Space between input and the line */
+  flex-grow: 1; /* Allows the line to take up remaining space */
+}

@@ -1,0 +1,22 @@
+<div>
+  <label for="owner-select">The owner of Kai's computer is</label>
+  <select id="owner-select" [(ngModel)]="ownerLaptop" (change)="onNameChange($event)">
+    <option [value]="-1">nobody</option>
+    <option *ngFor="let name of names; let i = index" [value]="i">{{ name }}</option>
+  </select>
+  <img *ngIf="ownerLaptop >= 0" [src]="getOwnerImage()" alt="Owner Image" class="owner-image">
+</div>
+
+<div>
+  <label>
+    Can multiple people die during the First Vote in the Pink Room?
+    <input type="checkbox" [(ngModel)]="shouldEveryoneDieTie" (change)="onShouldEveryoneDieTieChange()" />
+  </label>
+</div>
+
+<div>
+  <label>
+    Can Sacrifice Win?
+    <input type="checkbox" [(ngModel)]="canSacrWin" (change)="onCanSacrWinChange()" />
+  </label>
+</div>

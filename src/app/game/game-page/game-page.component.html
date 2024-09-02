@@ -1,0 +1,14 @@
+<div *ngIf="isLoading">Loading...</div>
+<div *ngIf="error">{{ error }}</div>
+<div class="background" (click)="onNext()" *ngIf="!isLoading && !error">
+  <img #backgroundImg class="background-img" *ngIf="scenes[index] !== 'X'" [src]="scenes[index]" alt="Scene" (load)="adjustTextBoxWidth()">
+  <div #textBox class="text-box">
+      <div #innerBox class="inner-box">
+          <p>{{ dialogs[index] }}</p>
+      </div>
+      <img class="charA" *ngIf="charAs[index] !== 'X'" [src]="charAs[index]" alt="Character A">
+      <img class="charB" *ngIf="charBs[index] !== 'X'" [src]="charBs[index]" alt="Character B">
+      <img class="charC" *ngIf="charCs[index] !== 'X'" [src]="charCs[index]" alt="Character C">
+  </div>
+</div>
+  

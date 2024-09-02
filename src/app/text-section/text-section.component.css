@@ -1,0 +1,27 @@
+.text-section {
+    width: 800px; /* Limit width to 800px */
+    margin: 0 auto; /* Center the component horizontally */
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Ensure the text section is above the rectangle */
+  }
+  
+  .paragraph {
+    margin-bottom: 3em; /* Add spacing between paragraphs */
+    text-align: left; /* Align text to the left */
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+  }
+  
+  .bold-text,
+  .light-text {
+    color: white;
+  }
+  
+  .bold-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .light-text {
+    font-size: 20px;
+  }

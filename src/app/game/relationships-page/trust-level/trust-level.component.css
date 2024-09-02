@@ -1,0 +1,95 @@
+.main-container {
+    margin-top: 100px;
+}
+
+.relationship {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 800px; /* Limit width to 800px */
+    color: white;
+    position: relative;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.relationship-box {
+    background-color: rgba(255, 255, 255, 0.1); /* White with 10% transparency */
+    border: 1px solid lightgray; /* Light gray outline */
+    padding: 10px; /* Add some padding for better appearance */
+    margin: 10px 0; /* Add some margin between boxes */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 800px; /* Limit width to 800px */
+    position: relative;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 800px; /* Limit width to 800px */
+    margin: 50px auto;
+    color: white;
+    position: relative;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.image {
+    margin: 0 8px;
+    height: 70px;
+    width: auto;
+    max-width: 70px;
+}
+
+.name, .text, .percentage, .status {
+    margin-right: 8px;
+}
+
+.strong-distrust {
+    color: red;
+    font-weight: bold;
+}
+
+.distrust {
+    color: darkred;
+    font-weight: bold;
+}
+
+.neutral {
+    color: gray;
+    font-weight: bold;
+}
+
+.trust {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.strong-trust {
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 800px; /* Limit width to 800px */
+    margin: auto;
+    color: red;
+    position: relative;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}

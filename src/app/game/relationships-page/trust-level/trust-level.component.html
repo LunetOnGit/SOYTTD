@@ -1,0 +1,45 @@
+<div class="main-container">
+    <div class="form-group">
+      <span class="text">Default Trust Level set at</span>
+      <input type="number" [(ngModel)]="defaultTrustLevel" (ngModelChange)="updateDefaultTrustLevel($event)" min="0" max="100">
+      <span class="text">%</span>
+      <span class="status" [ngClass]="getStatusClass(defaultTrustLevel)">
+        {{ getStatusText(defaultTrustLevel) }}
+      </span>
+    </div>
+
+    <div *ngFor="let a of charA; let i = index" class="relationship-box">
+        <div class="relationship">
+            <!-- <span class="name">{{ names[charA[i]] }}</span> -->    <!-- NameA-->
+            <img [src]="images[charA[i]]" class="image">
+            <span class="text">trusts</span>
+            <!--  <span class="name">{{ names[charB[i]] }}</span> -->   <!-- NameB-->
+            <img [src]="images[charB[i]]" class="image">
+            <span class="text">at</span>
+            <span class="percentage">{{ percentages[i] }}%</span>
+            <span class="status" [ngClass]="getStatusClass(percentages[i])">{{ getStatusText(percentages[i]) }}</span>
+            <button (click)="deleteRelationship(i)">X</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <select [(ngModel)]="newCharA">
+            <option *ngFor="let name of names" [value]="name">{{ name }}</option>
+        </select>
+        <img [src]="images[names.indexOf(newCharA)]" class="image">
+        <span class="text">trusts</span>
+        <select [(ngModel)]="newCharB">
+            <option *ngFor="let name of names" [value]="name">{{ name }}</option>
+        </select>
+        <img [src]="images[names.indexOf(newCharB)]" class="image">
+        <span class="text">at</span>
+        <input type="number" [(ngModel)]="newPercentage" min="0" max="100">
+        <span class="text">%</span>
+        <span class="status" [ngClass]="getStatusClass(newPercentage || 0)">
+            {{ getStatusText(newPercentage || 0) }}
+        </span>
+        <button (click)="addRelationship()">Add Relationship</button>
+    </div>
+  
+    <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+</div>

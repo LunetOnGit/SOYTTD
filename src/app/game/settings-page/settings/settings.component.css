@@ -1,0 +1,31 @@
+div {
+  margin: 10px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 800px; /* Limit width to 800px */
+  margin: 50px auto;
+  color: white;
+  position: relative;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+label, select, input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+label {
+  margin-bottom: 0; /* Ensure the label is not pushed down by margin */
+}
+
+img {
+  height: 70px;
+  width: auto;
+  max-width: 70px;
+  vertical-align:text-bottom;
+} 

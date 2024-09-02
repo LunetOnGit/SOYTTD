@@ -1,0 +1,28 @@
+.title, .subtitle, .description {
+    color: white;
+    position: relative;
+    z-index: 1;
+    width: 800px; /* Limit width to 800px */
+    margin: 0 auto; /* Center the component horizontally */
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 24px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 38px;
+  }
+  
+  .description {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
